@@ -1,0 +1,11 @@
+---
+---
+
+<link rel="stylesheet" href="{{ 'examples/simple/csl-blocks.css' | absolute_url }}">
+
+<h1>Simple Example</h1>
+
+{% assign bib_file = 'examples/simple/simple.bib' %}
+{% bibliography -f {{bib_file}} --style examples/simple/simple-ieee.csl %}
+
+
