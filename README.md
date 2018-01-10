@@ -1,6 +1,6 @@
 # Examples using jekyll-scholar
 
-[![Build Status](https://travis-ci.org/rseac/jekyll-scholar-extras.png?branch=master)](https://travis-ci.org/reseac/jekyll-scholar-extras)
+[![Build Status](https://travis-ci.org/rseac/jekyll-scholar-examples.png?branch=master)](https://travis-ci.org/reseac/jekyll-scholar-examples)
 
 This is a repository of examples that uses [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) to render the bibliographies.
 
