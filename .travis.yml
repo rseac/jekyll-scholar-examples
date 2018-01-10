@@ -1,3 +1,4 @@
+# CI for jekyll-scholar-examples
 language: ruby
 sudo: false
 cache: bundler
