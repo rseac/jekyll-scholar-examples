@@ -12,4 +12,14 @@ install:
     bundle install ;
 script:
     bundle exec rake 
+after_success:
+  - mkdir www
+  - cd www
+  - git clone -b gh-pages git@github.com/rseac/jekyll-scholar-extras
+  - git rm -rf . 
+  - cp -r ../_site/examples . 
+  - git add .
+  - git commit -m "Rendered jekyll-scholar-examples"
+  - git push -u origin gh-pages
 notifications:
+
