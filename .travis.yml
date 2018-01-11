@@ -27,6 +27,13 @@ after_success:
      git push -u origin gh-pages ;
      fi 
 deploy:
+   provider: pages
    api_key:
       secure: '$GITHUB_API_KEY'
+   skip_cleanup: true
+   local_dir: _site/examples/
+   keep-history: true
+   on:
+      branch: gh-pages 
+   target-branch: gh-pages
 
