@@ -15,7 +15,8 @@ script:
 after_success:
   - mkdir www
   - cd www
-  - git clone -b gh-pages git@github.com/rseac/jekyll-scholar-extras
+  - git clone -b gh-pages git@github.com/rseac/jekyll-scholar-extras.git
+  - cd jekyll-scholar-extras
   - git rm -rf . 
   - cp -r ../_site/examples . 
   - git add .
