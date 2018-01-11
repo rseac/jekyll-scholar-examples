@@ -21,8 +21,12 @@ after_success:
      git rm -rf . ;
      cp -r ../_site/examples . ;
      git add . ;
+     git push -f -q https://rseac:$GITHUB_API_KEY@github.com/rseac/jekyll-scholar-examples-gh-pages gh-pages &2>/dev/null
+
      git commit -m "Rendered jekyll-scholar-examples" ;
      git push -u origin gh-pages ;
      fi 
-notifications:
+deploy:
+   api_key:
+      secure: '$GITHUB_API_KEY'
 
