@@ -10,20 +10,6 @@ install:
     bundle install ;
 script:
    bundle exec rake 
-   #after_success:
-   #   - if [[ $PAGES = "true" ]]; then
-   #     mkdir www;
-   #     cd www;
-   #     git clone -b gh-pages git@github.com/rseac/jekyll-scholar-extras.git;
-   #     cd jekyll-scholar-extras;
-   #     git rm -rf . ;
-   #     cp -r ../_site/examples . ;
-   #     git add . ;
-   #     git push -f -q https://rseac:$GITHUB_API_KEY@github.com/rseac/jekyll-scholar-examples-gh-pages gh-pages &2>/dev/null
-   #
-   #     git commit -m "Rendered jekyll-scholar-examples" ;
-   #     git push -u origin gh-pages ;
-   #     fi 
 deploy:
    provider: pages
    github-token: $GITHUB_API_KEY
