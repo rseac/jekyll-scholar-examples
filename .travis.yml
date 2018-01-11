@@ -30,7 +30,6 @@ deploy:
    skip_cleanup: true
    local_dir: _site/examples/
    keep-history: true
-   on:
-      branch: gh-pages 
+   branch: gh-pages 
    target-branch: gh-pages
 
