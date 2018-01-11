@@ -5,22 +5,24 @@ cache: bundler
 matrix:
   include:
   - rvm: 2.4
-    env: WITH_COVERALLS=false
+    env: PAGES=true
   - rvm: 2.3
-    env: WITH_COVERALLS=false
+    env: PAGES=false
 install:
     bundle install ;
 script:
-    bundle exec rake 
+   bundle exec rake 
 after_success:
-  - mkdir www
-  - cd www
-  - git clone -b gh-pages git@github.com/rseac/jekyll-scholar-extras.git
-  - cd jekyll-scholar-extras
-  - git rm -rf . 
-  - cp -r ../_site/examples . 
-  - git add .
-  - git commit -m "Rendered jekyll-scholar-examples"
-  - git push -u origin gh-pages
+   - if [[ $PAGES = "true" ]]; then
+     mkdir www;
+     cd www;
+     git clone -b gh-pages git@github.com/rseac/jekyll-scholar-extras.git;
+     cd jekyll-scholar-extras;
+     git rm -rf . ;
+     cp -r ../_site/examples . ;
+     git add . ;
+     git commit -m "Rendered jekyll-scholar-examples" ;
+     git push -u origin gh-pages ;
+     fi 
 notifications:
 
