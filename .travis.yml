@@ -9,8 +9,8 @@ matrix:
 install:
     bundle install ;
 script:
-   bundle exec rake ;
-   ls -l _site/ ;
+   - bundle exec rake ;
+   - ls -l _site/ ;
 
 deploy:
    provider: pages
