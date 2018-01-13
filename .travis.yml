@@ -11,12 +11,11 @@ install:
 script:
    - bundle exec rake ;
    - ls -l _site/ ;
-
 deploy:
    provider: pages
    github-token: $GITHUB_API_KEY
    skip_cleanup: true
-   local_dir: _site/examples/
+   local_dir: _site/
    keep-history: true
    branch: gh-pages 
    target-branch: gh-pages
