@@ -9,7 +9,9 @@ matrix:
 install:
     bundle install ;
 script:
-   bundle exec rake 
+   bundle exec rake ;
+   ls -l _site/ ;
+
 deploy:
    provider: pages
    github-token: $GITHUB_API_KEY
