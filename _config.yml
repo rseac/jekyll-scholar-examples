@@ -1,3 +1,8 @@
 scholar:
    locale: en
    source: ./
+
+highlighter: rouge
+
+# Use gem-based theme to style the pages.
+theme: minimal-mistakes-jekyll
