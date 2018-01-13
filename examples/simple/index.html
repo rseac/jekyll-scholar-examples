@@ -1,11 +1,36 @@
 ---
+layout: single
+
 ---
 
-<link rel="stylesheet" href="{{ 'examples/simple/csl-blocks.css' | absolute_url }}">
+<style>
+.csl-block {
+    font-size: 16px;
+}
+.csl-title, .csl-author, .csl-event, .csl-editor, .csl-venue {
+    display: block;
+    position: relative;
+    font-size: 16px;
+
+}
+
+.csl-title b {
+    font-weight: 600;
+}
+
+.csl-content {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+   
+
+}
+
+</style>
 
 <h1>Simple Example</h1>
 
 {% assign bib_file = 'examples/simple/simple.bib' %}
-{% bibliography -f {{bib_file}} --style examples/simple/simple-ieee.csl %}
+{% bibliography -f {{bib_file}} --style examples/simple/simple-ieee.csl --bibliography_list_tag ul %}
 
 
