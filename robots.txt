@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://rseac.github.io/jekyll-scholar-examples/sitemap.xml
