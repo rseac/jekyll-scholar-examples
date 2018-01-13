@@ -5,6 +5,6 @@ scholar:
 highlighter: rouge
 
 # Use gem-based theme to style the pages.
-# theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes"
+theme: minimal-mistakes-jekyll
+#remote_theme: "mmistakes/minimal-mistakes"
 
