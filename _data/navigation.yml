@@ -1,0 +1,7 @@
+main: 
+   - title: "Home"
+     url: /
+   - title: "jekyll-scholar-examples"
+     url: https://github.com/rseac/jekyll-scholar-examples/
+   - title: "jekyll-scholar"
+     url: https://github.com/inukshuk/jekyll-scholar/
