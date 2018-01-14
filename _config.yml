@@ -7,5 +7,6 @@ highlighter: rouge
 # Use gem-based theme to style the pages.
 theme: minimal-mistakes-jekyll
 #remote_theme: "mmistakes/minimal-mistakes"
-url                      : "https://rseac.github.io/jekyll-scholar-examples" # 
+url     : "https://rseac.github.io/" # 
+baseurl : "/jekyll-scholar-examples" # 
 
