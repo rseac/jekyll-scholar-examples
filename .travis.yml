@@ -6,6 +6,9 @@ matrix:
   include:
   - rvm: 2.5
     #- rvm: 2.3
+before_install: 
+   - gem update --system ;
+   - gem update bundler ;
 install:
     bundle install ;
 script:
