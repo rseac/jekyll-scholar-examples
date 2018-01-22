@@ -4,7 +4,7 @@ sudo: false
 cache: bundler
 matrix:
   include:
-  - rvm: 2.4
+  - rvm: 2.5
     #- rvm: 2.3
 install:
     bundle install ;
