@@ -1,0 +1,10 @@
+# Override default config
+#
+
+highlighter: rouge
+
+scholar:
+   source: .
+   style: ./simple-ieee.csl
+   bibliography_list_tag: "ul.no-bullet"
+

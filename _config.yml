@@ -10,3 +10,4 @@ theme: minimal-mistakes-jekyll
 url     : "https://rseac.github.io/" # 
 baseurl : "/jekyll-scholar-examples" # 
 
+exclude : ['examples']
