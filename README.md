@@ -6,7 +6,7 @@ This is a repository of examples that uses [jekyll-scholar](https://github.com/i
 
 # Contribute your examples
 
-* [examples/simple/](Simple)
-* [examples/bibliography-template/](Bibliography template)
+* [Simple](examples/simple/)
+* [Bibliography template](examples/bibliography-template/)
 
 Please make your examples self-contained within a separate directory within `examples/`. Further customizations are welcome.
