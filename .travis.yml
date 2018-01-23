@@ -20,7 +20,7 @@ deploy:
    provider: pages
    github-token: $GITHUB_API_KEY
    skip_cleanup: true
-   local_dir: /tmp/examples
+   local_dir: _site/
    keep-history: true
    branch: gh-pages 
    target-branch: gh-pages
