@@ -3,6 +3,8 @@
 
 highlighter: rouge
 
+theme: minimal-mistakes-jekyll
+
 scholar:
    source: .
    style: ./simple-ieee.csl
