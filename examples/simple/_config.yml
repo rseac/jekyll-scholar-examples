@@ -5,6 +5,9 @@ highlighter: rouge
 
 theme: minimal-mistakes-jekyll
 
+url     : "https://rseac.github.io/" # 
+baseurl : "/jekyll-scholar-examples" # 
+
 scholar:
    source: .
    style: ./simple-ieee.csl
