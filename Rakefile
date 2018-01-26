@@ -54,24 +54,21 @@ def print_options(options)
 end 
 
 task :build_all do 
-   options = {}
-   options = Jekyll.configuration(options)
+   options = Jekyll.configuration({})
    root = options['source']
    # Set the destination to temp.
-   Dir.each_child(examples) { |d|
-      src = root + '/' + examples + '/' + d + '/'
-      dest = TEST_DIR + '/' + d
-      puts "directory: " + d + ", src: " + src 
-      if Dir.exist?(src)
-         run_options = options
-         prepend_test_dir(run_options, 'source')
-         prepend_test_dir(run_options, 'destination')
-         run_options['source'] = src
-         run_options['destination'] = dest
-         print_options(run_options)
-         before(dest, src)
-         Jekyll::Commands::Build.process(options)
-      end
+   Dir.each_child(examples) { |dir|
+	  src = root + '/' + examples + '/' + dir + '/'
+	  dest = TEST_DIR + '/' + dir
+	  if Dir.exist?(src)
+		 run_options = {}
+		 run_options['source'] = src
+		 run_options['destination'] = dest
+		 print_options(run_options)
+		 before(dest, src)
+		 Jekyll.configuration(run_options)
+		 Jekyll::Commands::Build.process(run_options)
+	  end
    }
 end 
 
